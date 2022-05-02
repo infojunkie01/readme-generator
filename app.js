@@ -80,8 +80,8 @@ const readmePrompt = projectData => {
     .then(projectData => {
       const readmeMarkup = generateReadme(projectData);
   
-      fs.writeFile('./README.md', readmeMarkup, err => {
+      fs.writeFile('./generated-readme/README.md', readmeMarkup, err => {
         if (err) throw new Error(err);
       });
-      console.log('README.md file generated');
+      console.log('README.md file generated in generated-readme folder');
     });

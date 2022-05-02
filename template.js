@@ -17,39 +17,38 @@ const generateReadme = projectData => {
       return '';
     }
     return `
-  # ${projectData.title}
-  ${badge}
+# ${projectData.title}
+${badge}
 
-  ### Description<a name="description"></a>
-  ${projectData.description}
+### Description<a name="description"></a>
+${projectData.description}
 
-  ### Table of contents
-  - [Description](#description)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
+### Table of contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
+### Installation<a name="installation"></a>
+${projectData.installation}
 
-  ### Installation<a name="installation"></a>
-  * ${projectData.installation}
+### Usage<a name="usage"></a>
+${projectData.usage}
 
-  ### Usage<a name="usage"></a>
-  * ${projectData.usage}
+### License<a name="license"></a>
+This application is covered by the ${projectData.license} license. 
 
-  ### License<a name="license"></a>
-  * This application is covered by the ${projectData.license} license. 
+### Contributing<a name="contributing"></a>
+${projectData.contributing}
 
-  ### Contributing<a name="contributing"></a>
-  * ${projectData.contributing}
-  
-  ### Tests<a name="tests"></a>
-  * ${projectData.tests}
+### Tests<a name="tests"></a>
+${projectData.tests}
 
-  ### Questions<a name="questions"></a>
-  * For any questions please reach out to <a href="https://github.com/${projectData.github}">${projectData.github}</a> at <a href="mailto:${projectData.email}">${projectData.email}</a>
+### Questions<a name="questions"></a>
+For any questions please reach out to <a href="https://github.com/${projectData.github}">${projectData.github}</a> at <a href="mailto:${projectData.email}">${projectData.email}</a>
 
     `;
   };
