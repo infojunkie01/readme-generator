@@ -1,4 +1,5 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
 const generateReadme = require('./template.js');
 
 // Data from user input
@@ -45,9 +46,9 @@ const readmePrompt = projectData => {
         name: 'license',
         message: 'Select a license:',
         choices: [
-          'MIT',
           'Apache',
-          'GPL'
+          'GNU GPL',
+          'MIT'
           ]
       },
       {
@@ -72,3 +73,15 @@ const readmePrompt = projectData => {
       }
     ]);
   };
+
+
+// Run function to prompt user for data and write readme file with inputted data
+  readmePrompt()
+    .then(projectData => {
+      const readmeMarkup = generateReadme(projectData);
+  
+      fs.writeFile('./README.md', readmeMarkup, err => {
+        if (err) throw new Error(err);
+      });
+      console.log('README.md file generated');
+    });
