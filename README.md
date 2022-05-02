@@ -1,35 +1,16 @@
+# README generator
 
-        # afd
-        [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+## Purpose
+Generates readme file for a project
 
-        ### Description<a name="description"></a>
-        daf
+## Built With
+* Javascript
+* Node.js
+* Markdown
 
-        ### Table of contents
-        - [Description](#description)
-        - [Installation](#installation)
-        - [Usage](#usage)
-        - [License](#license)
-        - [Contributing](#contributing)
-        - [Tests](#tests)
-        - [Questions](#questions)
+## Website
+https://infojunkie01.github.io/readme-generator/
 
-        ### Installation<a name="installation"></a>
-        * dfa
+## Contribution
+Made with ❤️ by infojunkie01
 
-        ### Usage<a name="usage"></a>
-        * fad
-
-        ### License<a name="license"></a>
-        * This application is covered by the Apache license. 
-
-        ### Contributing<a name="contributing"></a>
-        * afd
-        
-        ### Tests<a name="tests"></a>
-        * 
-
-        ### Questions<a name="questions"></a>
-        * For any questions please reach out to <a href="https://github.com/"></a> at <a href="mailto:"></a>
-
-    
